@@ -12,7 +12,6 @@ use parent 'ColorThemeBase::Base';
 our %THEME = (
     v => 2,
     summary => 'Tint other theme',
-    dynamic => 1,
     description => <<'_',
 
 This color theme tints RGB colors from other color scheme with another color.
