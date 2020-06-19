@@ -35,6 +35,12 @@ _
             default => 50,
         },
     },
+    examples => [
+        {
+            summary => 'Tint another color theme with lots of red',
+            args => {theme => 'Test::Static', color=>'ff0000', percent=>90},
+        },
+    ],
 );
 
 sub new {
