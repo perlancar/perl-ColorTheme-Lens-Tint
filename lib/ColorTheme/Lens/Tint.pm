@@ -45,7 +45,7 @@ sub new {
 
     require Module::Load::Util;
     $self->{orig_theme_class} = Module::Load::Util::instantiate_class_with_optional_args(
-        $self->{args}{theme});
+        {ns_prefix=>'ColorTheme'}, $self->{args}{theme});
 
     $self;
 }
